@@ -19,3 +19,8 @@ function TypingEffect(element, text, i = 0){
 }
 
 TypingEffect(div, text)
+
+//clears input field
+window.onload = function() {
+    document.getElementById('commandbar').value = '';
+  };

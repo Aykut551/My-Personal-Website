@@ -54,3 +54,14 @@
     }
   }
 
+input[type=text] {
+  background-color: #111;
+  color: #00bb00;
+  caret-color: #00bb00; 
+  border-style: none;
+  &:focus {
+    outline: none !important;
+    border-width: 0px !important;
+    border: none !important;
+}
+}
