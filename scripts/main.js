@@ -2,7 +2,7 @@ const memory = document.getElementById("memory");
 const hdd = document.getElementById("hdd");
 const totalKB = 16384;        //memory size
 const durationMs = 3000;      //memory test duration
-const hddcheckMS = 1500;      //hdd test duration
+const hddcheckMS = 1250;      //hdd test duration
 
 let startTime = null;
 let displayedKB = 0;
@@ -73,8 +73,6 @@ async function dochecks() {
     const hddtest4 = await hddcheckanimation("hddtest4", "Detecting IDE Secondary Slave", "None", hddcheckMS, "‎ ‎ ")
 }
 window.onload = function() {
-    document.getElementById('commandbar').value = '';
+    //document.getElementById('commandbar').value = '';
     dochecks();
-
-
 };

@@ -69,16 +69,26 @@ input[type=text] {
 }
 }
 
+/*claude */
+.bottom-fixed {
+    position: fixed;
+    bottom: 1em;
+    left: 7.35em;   
+    right: 5em;
+    margin: 0;
+}
 
-
+/*claude */
 #energy {
   position: relative;
-  top: -30px; /* istediğin kadar yukarı kaydır */
+  top: -30px; 
   width:200px;
   height:200px;
 }
 
-
+/* Scanlines
+* https://blog.carbonfive.com/2015/01/07/vintage-terminal-effect-in-css3/
+*/
 .scanlines {
     top: 0;
     left: 0;
