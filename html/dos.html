@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <script src="../scripts/dos.js" defer></script>
 </head>
+<style>
+    .prompt-label {
+        color: #eee;
+        margin-right: 8px;
+        white-space: nowrap;
+        user-select: none; /* kullanıcı yanlışlıkla seçip kopyalamasın */
+    }
+
+</style>
 <body>
     <div class="scanlines"></div>
-    <input type="text" id="commandbar" autofocus autocomplete="off" >
+    <pre class="output"></pre>
+    <div class="prompt-line">
+        <span class="prompt-label">$Bash &gt;</span>
+        <input type="text" id="commandbar" autofocus autocomplete="off">
+</div>
 </body>

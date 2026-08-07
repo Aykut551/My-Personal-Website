@@ -71,6 +71,7 @@ async function dochecks() {
     const hddtest2 = await hddcheckanimation("hddtest2", "Detecting IDE Primary Slave", "None", hddcheckMS, "‎ ‎ ‎ ‎ ")
     const hddtest3 = await hddcheckanimation("hddtest3", "Detecting IDE Secondary Master", "None", hddcheckMS, "‎ ")
     const hddtest4 = await hddcheckanimation("hddtest4", "Detecting IDE Secondary Slave", "None", hddcheckMS, "‎ ‎ ")
+    setTimeout(window.location.href = 'html/dos.html', 100)
 }
 window.onload = function() {
     //document.getElementById('commandbar').value = '';
