@@ -1,0 +1,13 @@
+{
+  "help": {
+    "helpOutput": "Shows a list of all available commands"
+  },
+  "clear": {
+    "output": "‎",
+    "helpOutput": "Clears the terminal screen"
+  },
+  "about": {
+    "output": "Hi this is my little web project \n About me: \n I'm Aykut i live in turkey \n I love tech and engineering",
+    "helpOutput": "Displays info about this site owner"
+  }
+}

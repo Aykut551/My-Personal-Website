@@ -7,6 +7,13 @@ const hddcheckMS = 1250;      //hdd test duration
 let startTime = null;
 let displayedKB = 0;
 
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'Delete') {
+        window.location.href = 'html/bios.html';
+    }
+});
+
 function memtest(timestamp){
     return new Promise((finished) => {
         function step(timestamp) {

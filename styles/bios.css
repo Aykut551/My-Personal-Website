@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Pixel';
+  src: url('fonts/Pixelon-OGALo.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+html { background: #0000aa;
+         padding: 1em;
+         font-family: Pixel;
+         color: #eee;
+         font-size: 2em;
+         overflow: hidden;
+}
+
+
+.Copyright{
+    position: relative;
+    letter-spacing: 4px; 
+    top: -30px; 
+}
+
+.rectangle {
+    background-color: rgba(0, 0, 0, 0);
+  position: relative;
+  bottom: 20px; 
+  height: 650px;
+  border: 2px solid #cccccc;
+  border-width: 3px;
+}
+
+.sorry{
+  font-size: 33px;
+  position: relative;
+  bottom: 500px; 
+}
+pre{
+    font-family: Pixel;
+}

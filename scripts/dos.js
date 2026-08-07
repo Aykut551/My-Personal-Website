@@ -34,15 +34,17 @@ async function runCommand(userInput) {
         const target = parts[1];
         if (cmds.hasOwnProperty(target)) {
             console.log(cmds[target].helpOutput);
+            TypingEffect(div, cmds[target].helpOutput)
         } else {
             console.log("No help available for:", target);
+            TypingEffect(div, "No help available for:" + ' ' + target)
         }
         return;
     }
 
     if (cmds.hasOwnProperty(userInput)) {
             if (userInput === "help") {
-        // command listesini dinamik olarak JSON key'lerinden üret
+        // Generate the command list dynamically from JSON keys.
         const commandNames = Object.keys(cmds);
         TypingEffect(div ,"Available commands: " + commandNames.join(", "));
         return;
@@ -54,6 +56,7 @@ async function runCommand(userInput) {
         var Unknown = "Unknown command:" + ' ' + userInput
         TypingEffect(div, Unknown)
     }
+
 }
 
 input.addEventListener("keypress", function(event) {
